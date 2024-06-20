@@ -1,0 +1,56 @@
+Difference between Document and Window objects
+
+WINDOW OBJECT:
+
+The window object is the topmost object in the browser's object model hierarchy. It represents the 
+entire browser window or tab that contains the web page. Here are some key characteristics:
+
+Global Scope: Variables and functions declared globally are attached to the window object. For 
+instance, if you declare 'var x = 10'; globally, you can access 'x' as 'window.x'.
+
+Properties and Methods: It provides access to various properties and methods related to the browser window. 
+Examples include window.innerHeight for the height of the viewport and 
+'window.location' for the current URL.
+
+Navigation Control: It manages browser navigation, such as opening new windows or tabs ('window.open()'') 
+and controlling the history ('window.history).
+
+Timers and Events: It handles timers ('setTimeout', 'setInterval') and events (addEventListener) that occur within the browser window.
+
+
+DOCUMENT OBJECT:
+
+The document object, on the other hand, represents the web page loaded into the window and serves as an entry point to the 
+content within that page:
+
+DOM Manipulation: It provides access to the Document Object Model (DOM), allowing manipulation of HTML elements on the page. 
+For example, 
+document.getElementById('elementId') retrieves an HTML element by its ID.
+
+Content Access: It gives access to content within the web page, such as forms (document.forms), images (document.images),
+ and links (document.links).
+
+Events: It allows registration of event handlers directly on the document or on specific elements
+within it (element.addEventListener('event', handler)).
+
+Hierarchy: The document object is a child of the window object. It represents the entire HTML document as a tree structure of elements
+ and nodes.
+
+
+KEY DIFFERENCES:
+
+Scope: While window encompasses the entire browser window and manages its properties, 
+document is focused specifically on the content and structure of the loaded web page.
+
+Functionality: window manages the browser environment, including navigation, history, and global variables, w
+hereas document focuses on interacting with and manipulating the DOM elements and content.
+
+Relationship: The document object is contained within the window object hierarchy. It represents 
+the content loaded into the browser window, making it possible to access and modify the structure 
+and elements of the HTML document.
+
+CONCLUSION:
+In conclusion, while both the window and document objects are essential components of web 
+browsing, they serve distinct purposes within the browser environment. Understanding their roles and 
+capabilities not only enhances your ability to manipulate web pages dynamically but also facilitates
+effective web development and user interaction.
